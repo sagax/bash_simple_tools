@@ -1,0 +1,4 @@
+#!/bin/bash
+local INPUT_FILE=$1
+local OUTPUT_FILE=$2
+ffmpeg -i "$INPUT_FILE" -vn -ar 44100 -ac 2 -ab 320k -f mp3 "$OUTPUT_FILE".mp3
